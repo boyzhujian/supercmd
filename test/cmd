@@ -1,0 +1,9 @@
+https://127.0.0.1:8443/server/gethostname
+https://127.0.0.1:8443/server/fileexist?filename=/Users/zhujian/goinstall/src/github.com/boyzhujian/supercmd/README.md
+
+https://127.0.0.1:8443/curl/upload?filename=/host/path/file&target=http://remoteip:port/path
+target is a gohttpserver 
+
+
+https://127.0.0.1:8443/nbr/confinfo?confid='123456789'
+
