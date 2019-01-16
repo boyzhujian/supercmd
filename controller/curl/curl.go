@@ -7,7 +7,7 @@ import (
 	"os/exec"
 )
 
-//filename   ,target  two querystring
+//filename   ,target  two querystring,using curl to upload file
 func UploadfileHandler(w http.ResponseWriter, r *http.Request) {
 	path, err := exec.LookPath("curl")
 	if err != nil {
