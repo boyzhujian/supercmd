@@ -14,3 +14,8 @@ current support api :
    -  detect file is  exist on this server
    -  
 
+
+how to build
+see build.sh
+
+

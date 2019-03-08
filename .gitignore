@@ -2,3 +2,4 @@ config/*
 mynote/*
 gincmd/tmp/*
 tmp/*
+dist/*
