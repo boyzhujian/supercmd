@@ -1,0 +1,13 @@
+version: "3.6"
+services:
+   supercmd:
+       image: supercmd
+       ports:
+         - 8180:8180       
+       build:
+          context: .
+          dockerfile: Dockerfile
+         #  args:
+         #    - buildno: "20190311"
+         #    - gitrevhead: "a059b3d24ef124c49bd42399457b76a9aa055d08"
+    
