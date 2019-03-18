@@ -99,6 +99,18 @@ func main() {
 		//c.String(http.StatusOK, output)
 		c.JSON(http.StatusOK, strroute)
 	})
+
+	authorized := r.Group("/admin", gin.BasicAuth(gin.Accounts{
+		"damon":   "msorootpass",
+		"jiazhu3": "cisocodamon",
+		"aierh":   "hello",
+	}))
+	authorized.GET("/secrets", func(c *gin.Context) {
+		// get user, it was set by the BasicAuth middleware
+		user := c.MustGet(gin.AuthUserKey).(string)
+		fmt.Println(user)
+	})
+
 	fmt.Println(filePath)
 	if strings.HasPrefix(filePath, "/") {
 		fmt.Println("run with https support ")

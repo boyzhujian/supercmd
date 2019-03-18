@@ -1,4 +1,5 @@
 FROM busybox
+ARG buildno
 LABEL MAINTAINER="jiazhu3@cisco.com"
 ADD dist/ginsupercmd_linux /
 CMD ["/ginsupercmd_linux"]
